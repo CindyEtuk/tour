@@ -1,0 +1,366 @@
+* {
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+html {
+	height: 100%;
+}
+body {
+	position: relative;
+	min-height: 100%;
+	color: #555555;
+	background-color: #FFFFFF;
+	margin: 0;
+	padding-bottom: 100px; /* Same height as footer */
+}
+h1, h2, h3, h4, h5 {
+	color: #394352;
+}
+.content-wrapper {
+	width: 1050px;
+	margin: 0 auto;
+}
+header {
+	border-bottom: 1px solid #EEEEEE;
+}
+header .content-wrapper {
+	display: flex;
+}
+header h1 {
+	display: flex;
+	flex-grow: 1;
+	flex-basis: 0;
+	font-size: 20px;
+	margin: 0;
+	padding: 24px 0;
+	text-decoration: none;
+}
+header h1 a{
+	text-decoration: none;
+}
+
+header nav {
+	display: flex;
+	flex-grow: 1;
+	flex-basis: 0;
+	justify-content: center;
+	align-items: center;
+}
+header nav a {
+	text-decoration: none;
+	color: #555555;
+	padding: 10px 10px;
+	margin: 0 10px;
+}
+header nav a:hover {
+	border-bottom: 1px solid #aaa;
+}
+header .link-icons {
+	display: flex;
+	flex-grow: 1;
+	flex-basis: 0;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+}
+header .link-icons a {
+	text-decoration: none;
+	color: #394352;
+	padding: 0 10px;
+}
+header .link-icons a:hover {
+	color: #4e5c70;
+}
+header .link-icons a i {
+	font-size: 18px;
+}
+header .link-icons a span {
+	display: inline-block;
+	text-align: center;
+	background-color: #63748e;
+	border-radius: 50%;
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 16px;
+	width: 16px;
+	height: 16px;
+	font-weight: bold;
+	position: absolute;
+	top: 22px;
+	right: 0;
+}
+main .featured {
+	display: flex;
+	flex-direction: column;
+	background-image: url(../images/img3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	height: 500px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+main .featured h2 {
+	display: inline-block;
+	margin: 0;
+	width: 1050px;
+	font-family: Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
+	font-size: 68px;
+	color: #FFFFFF;
+	padding-bottom: 10px;
+}
+main .featured p {
+	display: inline-block;
+	margin: 0;
+	width: 1050px;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+main .recentlyadded h2 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid #EEEEEE;
+}
+main .recentlyadded .excursions, main .excursions .excursions-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px 0 0 0;
+	text-transform: capitalize;
+}
+main .recentlyadded .excursions .excursion, main .excursions .excursions-wrapper .excursion {
+	display: block;
+	overflow: hidden;
+	text-decoration: none;
+	width: 25%;
+	padding-bottom: 60px;
+}
+main .recentlyadded .excursions .excursion img, main .excursions .excursions-wrapper .excursion img {
+	transform: scale(1);
+	transition: transform 1s;
+}
+main .recentlyadded .excursions .excursion .name, main .excursions .excursions-wrapper .excursion .name {
+	display: block;
+	color: #555555;
+	padding: 20px 0 2px 0;
+}
+main .recentlyadded .excursions .excursion .price, main .excursions .excursions-wrapper .excursion .price {
+	display: block;
+	color: #999999;
+}
+main .recentlyadded .excursions .excursion .rrp, main .excursions .excursions-wrapper .excursion .rrp {
+	color: #BBBBBB;
+	text-decoration: line-through;
+}
+main .recentlyadded .excursions .excursion:hover img, main .excursions .excursions-wrapper .excursion:hover img {
+	transform: scale(1.05);
+	transition: transform 1s;
+}
+main .recentlyadded .excursions .excursion:hover .name, main .excursions .excursions-wrapper .excursion:hover .name {
+	text-decoration: underline;
+}
+main > .excursion {
+	display: flex;
+	padding: 40px 0;
+}
+main > .excursion > div {
+	padding-left: 15px;
+}
+main > .excursion h1 {
+	font-size: 34px;
+	font-weight: normal;
+	margin: 0;
+	padding: 20px 0 10px 0;
+}
+main > .excursion .price {
+	display: block;
+	font-size: 18px;
+	color: red;
+}
+
+.submit button {
+	background: #4e5c70;
+	border: 0;
+	color: #FFFFFF;
+	width: 200px;
+	padding: 12px 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.submit button:hover {
+	background: #434f61;
+}
+
+main > .excursion form {
+	display: flex;
+	flex-flow: column;
+	margin: 40px 0;
+}
+main > .excursion form input[type="number"] {
+	width: 400px;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	color: #555555;
+	border-radius: 5px;
+}
+main > .excursion form input[type="submit"] {
+	background: #4e5c70;
+	border: 0;
+	color: #FFFFFF;
+	width: 400px;
+	padding: 12px 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+}
+main > .excursion form input[type="submit"]:hover {
+	background: #434f61;
+}
+main > .excursions h1 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+main > .excursions .buttons {
+	text-align: right;
+	padding-bottom: 40px;
+}
+main > .excursions .buttons a {
+	display: inline-block;
+	text-decoration: none;
+	margin-left: 5px;
+	padding: 12px 20px;
+	border: 0;
+	background: #4e5c70;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+main > .excursions .buttons a:hover {
+	background: #434f61;
+}
+main .booking h1 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+main .booking table {
+	width: 100%;
+}
+main .booking table thead td {
+	padding: 30px 0;
+	border-bottom: 1px solid #EEEEEE;
+}
+main .booking table thead td:last-child {
+	text-align: right;
+}
+main .booking table tbody td {
+	padding: 20px 0;
+	border-bottom: 1px solid #EEEEEE;
+}
+main .booking table tbody td:last-child {
+	text-align: right;
+}
+main .booking table .img {
+	width: 80px;
+}
+main .booking table .remove {
+	color: #777777;
+	font-size: 12px;
+	padding-top: 3px;
+}
+main .booking table .remove:hover {
+	text-decoration: underline;
+}
+main .booking table .price {
+	color: #999999;
+}
+main .booking table a {
+	text-decoration: none;
+	color: #555555;
+}
+main .booking table input[type="number"] {
+	width: 68px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	color: #555555;
+	border-radius: 5px;
+}
+main .booking .subtotal {
+	text-align: right;
+	padding: 40px 0;
+}
+main .booking .subtotal .text {
+	padding-right: 40px;
+	font-size: 18px;
+}
+main .booking .subtotal .price {
+	font-size: 18px;
+	color: #999999;
+}
+main .booking .buttons {
+	text-align: right;
+	padding-bottom: 40px;
+}
+main .booking .buttons input[type="submit"] {
+	margin-left: 5px;
+	padding: 12px 20px;
+	border: 0;
+	background: #4e5c70;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+main .booking .buttons input[type="submit"]:hover {
+	background: #434f61;
+}
+main .placeorder h1 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+main .placeorder p {
+	text-align: center;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	border-top: 1px solid #EEEEEE;
+	padding: 0px 0;
+	width: 100%;
+}
+.footer a{
+    text-decoration: none;
+    color: #4a536e;
+}

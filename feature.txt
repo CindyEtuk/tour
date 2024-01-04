@@ -1,0 +1,39 @@
+
+WEBSITE PAGE STRUCTURE: 
+
+	index.php — The first user sees as they open the website URL
+    in this file, HTML5 and Functions was used 
+
+	style.css — The CSS stylesheet for our index page and excursion page.
+
+	Functions.php — store navigation, footer and the database connection used across most pages 
+
+	Functn.php — Since the PDO interface for accessing MySQL databases from PHP will simplify working with our database and its tables, I've decided to give it a go. I also had the navigation for registered customer changed. All stored in this file 
+
+	authenticate.php — Authenticate users, establish a database connection, validate form data, receive database results, and create new sessions.
+
+	logout.php — Destroy logged-in sessions and forward the user to the login page.
+
+
+	home.php — Homepage for authenticated users, and also featured image and four most recent excursions.
+
+	profile.php — Retrieve the user's MySQL account information and populate them using PHP and HTML.
+
+	excursions.php — file shows the list of all available excursions and provide simple page navigation.
+
+
+	excursion.php — Based on the GET request, this file will show a single excursion and include a navigation to book for an excursion based ExcursionID
+
+	booking.html — contains HTML form for customer to fill in the booking form
+
+	booking.php — insert the customer data to the database 
+
+
+	booked.php — A simple message that appears when the user has submitted their booking.
+
+	Upload.html — Form for upload images 
+
+	Upload.php — Insert into the database images 
+
+
+	Upload file — files stored all database uploaded images 
